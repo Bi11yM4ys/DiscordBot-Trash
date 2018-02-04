@@ -48,6 +48,8 @@ async def on_message(message):
         await client.send_message(message.channel, ":cool:")
     if message.content.startswith("!hey"):
         await client.send_message(message.channel, "AND I SAY HEY! WHAT A WONDERFUL KIND OF DAY")
+    if message.content == "robot":
+        await client.send_message(message.channel, ":robot:")
     
 
 client.run("") #TokenGoesHere
